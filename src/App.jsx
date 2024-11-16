@@ -11,6 +11,7 @@ function App() {
         <ItemListContainer greeting= 'bienvenidos a la tienda'/>
       </div>
   )
+      
 }
 
 export default App
