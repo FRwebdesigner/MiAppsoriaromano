@@ -1,5 +1,4 @@
 
-import ItemCount from "./ItemCount"
 const ItemListContainer = ({greeting, texto}) =>{
 
     console.log('ItemListContainer')
@@ -10,7 +9,6 @@ const ItemListContainer = ({greeting, texto}) =>{
         <div>
             <h1>{greeting}</h1>
             <p>{texto}</p>
-            <itemCount stock={12} onAdd ={onAdd}/>
         </div>
     )
 }
