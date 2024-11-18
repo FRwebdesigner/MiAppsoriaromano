@@ -4,6 +4,11 @@ import { getOneProduct, getProducts } from '../mock/data'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 
+<div>
+    <Header />
+    <Data />
+</div>
+
 const ItemDetailContainer = () => {
     const [producto, setProducto]=useState({})
     const { id } = useParams()
