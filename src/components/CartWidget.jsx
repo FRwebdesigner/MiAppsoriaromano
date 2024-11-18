@@ -1,3 +1,4 @@
+
 const CartWidget = ({counter}) => {
     
     return(
@@ -7,4 +8,5 @@ const CartWidget = ({counter}) => {
         </div>
     )
 }
+
 export default CartWidget
