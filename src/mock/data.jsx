@@ -61,6 +61,22 @@ export const getProducts = () =>{
     })
 }
 
+//Opcion sensilla
+// export const getOneProduct = ()=>{
+//     let error=false
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             if(!error){
+//                 resolve(productos[1])
+//             }else{
+//                 reject('No hay data')
+//             }
+//         },3000)
+//     })
+// }
+
+//Opcion dinamica
+
 export const getOneProduct = (id)=>{
     let error=false
     return new Promise((resolve, reject)=>{
