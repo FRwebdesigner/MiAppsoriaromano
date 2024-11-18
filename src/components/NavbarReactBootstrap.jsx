@@ -1,5 +1,4 @@
 
-
 import CartWidgetReactIcons from './CartWidgetReactIcons';
 import { NavLink } from 'react-router-dom';
 function NavbarReactBootstrap() {
@@ -31,4 +30,4 @@ function NavbarReactBootstrap() {
   );
 }
 
-export default NavbarReactBootstrap;
+export default NavbarReactBootstrap

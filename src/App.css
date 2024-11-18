@@ -1,31 +1,31 @@
 .navContainer{
   width: 100%;
-  padding:2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-color: palevioletred
+  ;
 }
 
 .aLink{
   color:white;
   font-weight: 500;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 
 .cartWidgetContainer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
 
 .cartIcon{
-  width:4rem;
+  width: 3rem;
 }
 
 .cartCounter{
-  color:blueviolet;
+  color: aquamarine;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 250;
 }
