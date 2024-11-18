@@ -1,48 +1,48 @@
 const productos= [
     {
         id:'1',
-        name:'Random 1',
-        stock:10,
-        price:50,
-        description:'lorem ipsu,dkfnkdnfdnfkdnflk',
-        img:'https://picsum.photos/200',
-        category:'nuevos'
+        name:'Mascota 1',
+        stock:475,
+        price:500,
+        description:'Caniche Toy',
+        img:'',
+        category:'tienda'
     },
     {
         id:'2',
-        name:'Random 2',
-        stock:18,
-        price:150,
-        description:'lorem ipsu,dkfnkdnfdnfkdnflk',
-        img:'https://picsum.photos/201',
+        name:'Mascota 2',
+        stock:650,
+        price:675,
+        description:'Gato Raza Tuxedo',
+        img:'',
         category:'ofertas'
     },
     {
         id:'3',
-        name:'Random 3',
-        stock:50,
-        price:5000,
-        description:'lorem ipsu,dkfnkdnfdnfkdnflk',
-        img:'https://picsum.photos/203',
-        category:'mas vendidos'
+        name:'Mascota 3',
+        stock:840,
+        price:865,
+        description:'Gato Raza Golden',
+        img:'',
+        category:'tienda'
     },
     {
         id:'4',
-        name:'Random 4',
+        name:'Mascota 4',
         stock:550,
-        price:55000,
-        description:'lorem ipsu,dkfnkdnfdnfkdnflk',
-        img:'../shopping-cart.png',
-        category:'mas vendidos'
+        price:575,
+        description:'Ovejero Aleman',
+        img:'',
+        category:'ofertas'
     },
     {
         id:'5',
-        name:'Random 4',
-        stock:550,
-        price:55000,
-        description:'lorem ipsu,dkfnkdnfdnfkdnflk',
-        img:'https://i.postimg.cc/zXJgYb8n/darth-vader-rogue-one-4k-zu-1280x720.jpg',
-        category:'mas vendidos'
+        name:'Mascota 5',
+        stock:500,
+        price:550,
+        description:'Gato Blanco',
+        img:'',
+        category:'ofertas'
     }
 ]
 
