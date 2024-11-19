@@ -5,7 +5,7 @@ const productos= [
         stock:475,
         price:500,
         description:'Caniche Toy',
-        img:'',
+        img:'https://www.bichonmalteslovers.com/wp-content/uploads/2022/05/caniche-blanco.jpg',
         category:'tienda'
     },
     {
@@ -14,7 +14,7 @@ const productos= [
         stock:650,
         price:675,
         description:'Gato Raza Tuxedo',
-        img:'',
+        img:'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5-Of1L3gyaI2dEqNToKsX_KZF9pJmIU25aANysDYb1bj_6QonVx2oCEcPtGvn_kUM6I-B2KrMqpwqavFa2KVPomlIBpi7TFyWKq1zIaZ_wMe_fBeu1CZU1RI668FkklASDmVhc2e2_v6/s1600/Gato+tuxedo.jpg',
         category:'ofertas'
     },
     {
@@ -23,7 +23,7 @@ const productos= [
         stock:840,
         price:865,
         description:'Gato Raza Golden',
-        img:'',
+        img:'https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,w_900,c_thumb,f_auto,q_80/mascotas/i-12235.jpeg',
         category:'tienda'
     },
     {
@@ -32,7 +32,7 @@ const productos= [
         stock:550,
         price:575,
         description:'Ovejero Aleman',
-        img:'',
+        img:'https://ohmydogmagazine.com.ar/wp-content/uploads/dog-germanshepherd-runa.jpg',
         category:'ofertas'
     },
     {
@@ -41,7 +41,7 @@ const productos= [
         stock:500,
         price:550,
         description:'Gato Blanco',
-        img:'',
+        img:'https://www.rover.com/blog/wp-content/uploads/white-cat-min-1200x675.jpg',
         category:'ofertas'
     }
 ]
