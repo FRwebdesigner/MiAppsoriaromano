@@ -1,5 +1,5 @@
-import  {Badge}  from "react-bootstrap"
-import  {BsCart4}  from "react-icons/bs"
+import  { Badge }  from "react-bootstrap"
+import  {  BsCart4  }  from "react-icons/bs"
 
 
 const CartWidgetReactIcons = () =>{
