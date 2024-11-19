@@ -20,11 +20,11 @@ const NavbarBootstrapHTML = () =>{
           <ul className="dropdown-menu">
             <li><NavLink className="dropdown-item" to='/products/tienda'>Tienda</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><NavLink className="dropdown-item" to='/products/productos'>Productos</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/prodcutos'>Productos</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><NavLink className="dropdown-item" to='/products/ofertas'>Ofertas</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/nuevos'>Ofertas</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><NavLink className="dropdown-item" to='/products/destacados'>Destacados</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/nuevos'>Destacados</NavLink></li>
           </ul>
         </li>
        
