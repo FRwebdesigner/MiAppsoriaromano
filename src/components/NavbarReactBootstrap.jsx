@@ -15,13 +15,13 @@ function NavbarReactBootstrap() {
           <Nav className="me-auto">
             <Nav.Link to='/' as={NavLink}>Home</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/products'>Más Vendidos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item  as={NavLink} to='/products/ofertas'>
+              <NavDropdown.Item  as={NavLink} to='/products'>
                 Ofertas
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to='/products'>Nuevos Ingresos</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <CartWidgetReactIcons/>
