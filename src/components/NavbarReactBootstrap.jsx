@@ -33,4 +33,4 @@ function NavbarReactBootstrap() {
   );
 }
 
-export default NavbarReactBootstrap
+export default NavbarReactBootstrap;

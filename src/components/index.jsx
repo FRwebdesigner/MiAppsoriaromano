@@ -5,8 +5,7 @@ import React from 'react';
 export const ItemListContainer = ({ texto }) => {
 
     const onAdd = (quantity) =>{
-        alert(`Felicidades! Has adoptado ${quantity} mascota`) 
-        alert(`Compra realizada con exito`) 
+        alert(`Compraste ${quantity} productos`)
     }
 
     return (
