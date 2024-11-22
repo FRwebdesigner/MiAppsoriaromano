@@ -43,6 +43,15 @@ const productos= [
         description:'Gato Blanco',
         img:'https://www.rover.com/blog/wp-content/uploads/white-cat-min-1200x675.jpg',
         category:'ofertas'
+    },
+    {
+        id:'6',
+        name:'Mascota 5',
+        stock:1900,
+        price:2000,
+        description:'Siberian',
+        img:'https://0d2ujxjiqkxw.cdn.shift8web.com/wp-content/uploads/husky.jpg',
+        category:'nuevos ingresos'
     }
 ]
 

@@ -5,8 +5,7 @@ import ItemListContainer from './components/ItemListContainer'
 import NavbarReactBootstrap from './components/NavbarReactBootstrap';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Error from './components/Error';
-import ItemCount from './components/ItemCount';
+import ItemList from './components/ItemList';
 
 
 function App() {
@@ -15,6 +14,7 @@ function App() {
     <NavbarReactBootstrap />
     <ItemDetailContainer />
     <ItemListContainer />
+    <ItemList />
       </>
      );
   }

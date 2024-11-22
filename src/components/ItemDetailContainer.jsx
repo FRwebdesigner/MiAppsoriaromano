@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { getOneProduct, getProducts } from '../mock/data'
 import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router-dom'
 
-const pet = { id: 1, image:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg', title: "Caniche Toy" };
+const pet = { id: 1, image:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg', title: "Tienda De Mascotas" };
 
  export const ItemDetailContainer = () => {
         const [data, setData] = useState({});
@@ -18,29 +20,9 @@ const pet = { id: 1, image:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJ
 
        return (
         <ItemDetail data={data} />
-       );
+       )
+
  }
 
-// const ItemDetailContainer = () => {
-//     const [producto, setProducto]=useState({})
-//     const { id } = useParams()
-//     console.log(id)
-//     useEffect(()=>{
-//         getOneProduct(id)
-//         .then((res)=> setProducto(res))
-//         .catch((error)=>console.log(error))
-     
-//     },[])
-//      useEffect(()=>{
-//          getProducts()
-//          .then((res)=> setProducto(res.find((item)=> item.id === '2')))
-//         .catch((error)=>console.log(error))
-//      },[])
-//   return (
-//     <div>
-//         <ItemDetail producto={producto}/>
-//     </div>
-//   )
-// }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

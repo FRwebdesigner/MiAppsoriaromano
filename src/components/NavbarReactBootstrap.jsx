@@ -22,8 +22,6 @@ function NavbarReactBootstrap() {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>
-             
-             
             </NavDropdown>
           </Nav>
           <CartWidgetReactIcons/>
@@ -33,4 +31,4 @@ function NavbarReactBootstrap() {
   );
 }
 
-export default NavbarReactBootstrap;
+export default NavbarReactBootstrap
