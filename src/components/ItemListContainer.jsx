@@ -31,7 +31,7 @@ export const ItemListContainer = ({ texto }) => {
 
     return (
         <>
-            <h1 greeting={texto} />
+            <h1 greeting={texto} Bienvenidos a PetShop />
             <ItemCount initial={3} stock={5} onAdd={onAdd} />
             <ItemList data={data} />
         </>

@@ -7,16 +7,19 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemList from './components/ItemList';
 
-
-function App() {
+function App () {
   return (
-    <>
+    <BrowserRouter>
     <NavbarReactBootstrap />
-    <ItemDetailContainer />
-    <ItemListContainer />
+    <Routes>
+     <Route path='/' element={<ItemListContainer greeting='Bienvenidos a PetShop' />} />
+     <Route path='/category/:categoryId' element={<ItemListContainer greeting='Bienvenidos a PetShop' />} />
+     <Route path='item/:id' element={ <ItemDetailContainer/>} />
+    </Routes>
     <ItemList />
-      </>
-     );
-  }
+      </BrowserRouter>
+     )
 
+
+    }     
 export default App;
