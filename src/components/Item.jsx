@@ -1,13 +1,21 @@
-import React from 'react';
+import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
+const Item = ({producto}) => {
+  const navegar = useNavigate()
+  return (
+    <div>
+        <img src={producto.img} alt={producto.name}/>
+        <p>{producto.name}</p>
+        <p>${producto.price},00</p>
+        {/* template string */}
+        <Link className='btn btn-primary' to={`/item/${producto.id}`}>Ver más</Link>
+        {/* Sin template string */}
+        {/* <Link className='btn btn-primary' to={'/item/'+producto.id}>Ver más</Link> */}
+        {/* Con useNavigate */}
+        {/* <button className='btn btn-primary' onClick={()=> navegar(`/item/${producto.id}`)} >Ver más</button> */}
+    </div>
+  )
+}
 
-const Item = ({info}) => {
-         return (
-          <a href='' className="film">
-            <img src={info.image} alt="" />
-            <p>{info.title}</p>
-          </a>
-         );
-}        
-
-export default Item;
+export default Item

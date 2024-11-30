@@ -6,7 +6,7 @@ const productos= [
         price:500,
         description:'Caniche Toy',
         img:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg',
-        category:'tienda'
+        category:'mas vendidos'
     },
     {
         id:'2',
@@ -24,7 +24,7 @@ const productos= [
         price:865,
         description:'Gato Raza Golden',
         img:'https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,w_900,c_thumb,f_auto,q_80/mascotas/i-12235.jpeg',
-        category:'tienda'
+        category:'nuevos ingresos'
     },
     {
         id:'4',
@@ -42,7 +42,7 @@ const productos= [
         price:550,
         description:'Gato Blanco',
         img:'https://www.rover.com/blog/wp-content/uploads/white-cat-min-1200x675.jpg',
-        category:'ofertas'
+        category:'mas vendidos'
     },
     {
         id:'6',

@@ -1,25 +1,29 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+//Esto es si estoy usando bootstrap comun
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 import ItemListContainer from './components/ItemListContainer'
 import NavbarReactBootstrap from './components/NavbarReactBootstrap';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ItemList from './components/ItemList';
+import { CartProvider } from './context/CartContext';
+import CartContainer from './components/CartContainer';
+function App() {
 
-function App () {
+
   return (
-    <BrowserRouter>
-    <NavbarReactBootstrap />
-    <Routes>
-     <Route path='/' element={<ItemListContainer greeting='Bienvenidos a PetShop' />} />
-     <Route path='/category/:categoryId' element={<ItemListContainer greeting='Bienvenidos a PetShop' />} />
-     <Route path='item/:id' element={ <ItemDetailContainer/>} />
-    </Routes>
-    <ItemList />
+    <CartProvider>
+      <BrowserRouter>
+         <NavbarReactBootstrap/>
+         <Routes>
+           <Route path='/' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas' />} />
+           <Route path='/category/:categoryId' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas' />} />
+           <Route path='/item/:id' element={ <ItemDetailContainer/>}/>
+           <Route path='/cart' element={ <CartContainer/>}/>
+         </Routes>
       </BrowserRouter>
-     )
-
-
-    }     
+     
+    </CartProvider>
+  )
+}
 export default App
