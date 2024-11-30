@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import ItemList from './ItemList';
 
 const pet =  [
-    { id: 1, image:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg', title: "Caniche Toy" },
+    { id: 1, image:'https://www.bichonmalteslovers.com/wp-content/uploads/2022/05/caniche-blanco.jpg', title: "Caniche Toy" },
     { id: 2, image:'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix5-Of1L3gyaI2dEqNToKsX_KZF9pJmIU25aANysDYb1bj_6QonVx2oCEcPtGvn_kUM6I-B2KrMqpwqavFa2KVPomlIBpi7TFyWKq1zIaZ_wMe_fBeu1CZU1RI668FkklASDmVhc2e2_v6/s1600/Gato+tuxedo.jpg', title: "Gato Raza Tuxedo" },
     { id: 3, image:'https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,w_900,c_thumb,f_auto,q_80/mascotas/i-12235.jpeg', title: "Gato Raza Golden" },
     { id: 4, image:'https://ohmydogmagazine.com.ar/wp-content/uploads/dog-germanshepherd-runa.jpg', title: "Ovejero Aleman" },
