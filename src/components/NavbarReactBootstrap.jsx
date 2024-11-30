@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetReactIcons from './CartWidgetReactIcons';
 import { NavLink } from 'react-router-dom';
-import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 function NavbarReactBootstrap() {
@@ -13,7 +12,7 @@ function NavbarReactBootstrap() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand as={NavLink} to='/'>PetShopStore</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to='/'>CoderShop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
