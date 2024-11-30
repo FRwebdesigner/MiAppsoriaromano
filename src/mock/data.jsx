@@ -46,7 +46,7 @@ const productos= [
     },
     {
         id:'6',
-        name:'Mascota 5',
+        name:'Mascota 6',
         stock:1900,
         price:2000,
         description:'Siberian',
