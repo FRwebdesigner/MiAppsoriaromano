@@ -5,7 +5,7 @@ const productos= [
         stock:475,
         price:500,
         description:'Caniche Toy',
-        img:'https://www.bichonmalteslovers.com/wp-content/uploads/2022/05/caniche-blanco.jpg',
+        img:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg',
         category:'tienda'
     },
     {
