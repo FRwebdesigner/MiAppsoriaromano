@@ -16,10 +16,10 @@ function App() {
       <BrowserRouter>
          <NavbarReactBootstrap/>
          <Routes>
-           <Route path='/' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas' />} />
-           <Route path='/category/:categoryId' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas' />} />
-           <Route path='/item/:id' element={ <ItemDetailContainer/>}/>
-           <Route path='/cart' element={ <CartContainer/>}/>
+           <Route path='/' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas'/>}/>
+           <Route path='/category/:categoryId/' element={<ItemListContainer greeting='Bienvenidos a nuestra tienda de Mascotas'/>}/>       
+           <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+           <Route path='/cart' element={<CartContainer/>}/>
          </Routes>
       </BrowserRouter>
      
