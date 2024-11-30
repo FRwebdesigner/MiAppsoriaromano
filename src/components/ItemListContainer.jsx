@@ -1,6 +1,8 @@
 import ItemCount from './ItemCount';
 import React, {useState, useEffect} from 'react';
 import ItemList from './ItemList';
+import { collection } from 'firebase/firestore/lite';
+import {db} from '../services/Firebase';
 
 const pet =  [
     { id: 1, image:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg', title: "Caniche Toy" },
@@ -11,23 +13,44 @@ const pet =  [
     { id: 6, image:'https://0d2ujxjiqkxw.cdn.shift8web.com/wp-content/uploads/husky.jpg', title: "Siberian" },
 ];
 
+
+
 export const ItemListContainer = ({ texto }) => {
     const   [data, setData] = useState([])
 
-    useEffect(() => {
-      const getData = new Promise(resolve => {
-        setTimeout(() => {
-           resolve(pet)
-        }, 3000);
-      });
-      getData.then(res => setData(res));
+    useEffect(()=>{
+        setLoading(true)
+        const productsCollection = collection(db,"productos")
 
-    }, [])
+        getDocs(productsCollection)
+        .then((res)=>{
+            const list = res.docs.map((product)=>{
+                return {
+                    id: product.id,
+                    ...product.data()
+                } 
+            }) 
+            setProducts(list)
+        }) 
+        .catch((error)=> console.log(error))  
+        .finally(()=> setLoading(false))
 
-    const onAdd = (quantity) =>{
-        alert(`Felicidades! Has adoptado ${quantity} mascota`); 
-        alert(`Compra realizada con exito`);
-    }
+ },[])
+
+    // useEffect(() => {
+    //   const getData = new Promise(resolve => {
+    //     setTimeout(() => {
+    //        resolve(pet)
+    //     }, 3000);
+    //   });
+    //   getData.then(res => setData(res));
+
+    // }, [])
+
+    // const onAdd = (quantity) =>{
+    //     alert(`Felicidades! Has adoptado ${quantity} mascota`); 
+    //     alert(`Compra realizada con exito`);
+    // }
 
     return (
         <>
