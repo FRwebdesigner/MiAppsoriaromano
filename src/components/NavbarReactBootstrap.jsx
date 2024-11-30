@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetReactIcons from './CartWidgetReactIcons';
 import { NavLink } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 function NavbarReactBootstrap() {
