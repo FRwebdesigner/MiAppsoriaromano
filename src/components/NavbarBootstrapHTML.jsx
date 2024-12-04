@@ -14,15 +14,15 @@ const NavbarBootstrapHTML = () =>{
           <NavLink className="nav-link active" aria-current="page" to='/'>Home</NavLink>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <NavLink className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Productos
-          </a>
+          </NavLink>
           <ul className="dropdown-menu">
-            <li><NavLink className="dropdown-item" to='/category/mas vendidos'>Más Vendidos</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/mas vendidos'>Más Vendidos</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><NavLink className="dropdown-item" to='/category/ofertas'>Ofertas</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/ofertas'>Ofertas</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><NavLink className="dropdown-item" to='/category/nuevos'>Nuevos Ingresos</NavLink></li>
+            <li><NavLink className="dropdown-item" to='/products/nuevos'>Nuevos Ingresos</NavLink></li>
           </ul>
         </li>
        

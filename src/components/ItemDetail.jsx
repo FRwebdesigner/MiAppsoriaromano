@@ -1,24 +1,38 @@
 import React, { useContext, useState } from 'react'
 import ItemCount from './ItemCount'
-import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
+import { CartContext, useCart } from '../context/CartContext'
 
 const ItemDetail = ({producto}) => {
-  const [purchase, setPurchase] = useState(false)
-  const {addItem} = useContext(CartContext)
-
+    const [compra, setCompra] = useState(false)
+    // const {addToCart, cart}= useContext(CartContext)
+    const {addToCart}= useCart()
     const onAdd = (cantidad) =>{
-      setPurchase(true)
-       addItem(producto, cantidad)
+      setCompra(true)
+      // let cartItem = {
+      //   name: producto.name,
+      //   img: producto.img,
+      //   price: producto.price,
+      //   stock:producto.stock,
+      //   id:producto.id
+      // }
+      //   addToCart(cartItem, cantidad)
+      addToCart(producto, cantidad)
     }
+   
   return (
-    <div style={{display:'FLEX', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
-        <h2>Detalle de: {producto.name}</h2>
-        <img src={producto.img} alt={producto.name}/>
+    <div>
+        <h1>Detalle del producto:{producto.name}</h1>
+        <img src={producto.img} alt={producto.img}/>
         <p>{producto.description}</p>
-        <p>Stock: {producto.stock}</p>
-        <p>${producto.price},00</p>
-      { purchase ? <Link className='btn btn-dark' to='/cart'>Ir al carrito</Link> :  <ItemCount stock={producto.stock} initial={1} onAdd={onAdd}/>}
+        <p>${producto.price}</p>
+ {compra 
+ ? <div>
+  <Link className='btn btn-dark' to='/'>Seguir comprando</Link>
+    <Link className='btn btn-dark' to='/cart'>Ir al carrito</Link>
+  </div> 
+ : <ItemCount stock={producto.stock} onAdd={onAdd}/>
+ }
     </div>
   )
 }

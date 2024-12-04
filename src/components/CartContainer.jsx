@@ -11,7 +11,7 @@ const CartContainer = () => {
             !cart.length 
             ? <div>
                 <h2> Tu carrito esta vacio!</h2>
-                <Link to='/'>Ir a comprar!</Link>
+                <Link to='/'>Ir a comprar</Link>
             </div>
             :<div>
                 <h2> Tu Carrito!</h2>

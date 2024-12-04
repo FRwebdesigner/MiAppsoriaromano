@@ -1,33 +1,36 @@
-import {useEffect, useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import { getProducts } from "../mock/data"
 import ItemList from './ItemList'
-import { getProducts } from '../mock/data'
-import { useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
+import Loader from './Loader'
 
 
-const ItemListContainer = ({greeting}) => {
-    const [items, setItems] = useState([])
-    const {categoryId}= useParams()
-   
+const ItemListContainer = ({greeting, texto}) => {
+    const [products, setProducts] = useState([])
+    const [loading, setLoading]= useState(false)
+    const {category}= useParams()
+    // const {greeting, texto} = props
     useEffect(()=>{
+        setLoading(true)
         getProducts()
         .then((res)=>{
-            if(categoryId){
-                //filtro
-                setItems(res.filter((producto) => producto.category === categoryId))
+            if(category){
+                //filtrar
+                setProducts(res.filter((prod)=> prod.category === category ))
             }else{
-                //respuesta sin filtrar
-                setItems(res)
+                setProducts(res)
             }
         })
         .catch((error)=> console.log(error))
-    },[categoryId])
-
+        .finally(()=> setLoading(false))
+    },[category])
 
     return(
         <div>
-            <h1 className="text-center">{greeting}</h1>
-            <ItemList items={items}/>
-        </div>
+          
+            <h1 className="text-center">{greeting}<span style={{textTransform:'capitalize', color:'violet'}}>{category}</span></h1>
+           {loading ? <Loader/>: <ItemList products={products}/>}
+         </div>
     )
 }
 export default ItemListContainer
