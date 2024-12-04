@@ -28,9 +28,9 @@ function NavbarReactBootstrap() {
              
             </NavDropdown>
           </Nav>
-          {/* {cartQuantity() > 0 && <NavLink to='/cart' style={{textDecoration:'none'}}>
+           {cartQuantity() > 0 && <NavLink to='/cart' style={{textDecoration:'none'}}>
               <CartWidgetReactIcons/>
-            </NavLink>} */}
+            </NavLink>} 
             <NavLink to='/cart' style={{textDecoration:'none'}}>
               <CartWidgetReactIcons/>
             </NavLink>
