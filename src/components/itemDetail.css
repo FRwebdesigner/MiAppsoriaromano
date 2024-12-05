@@ -5,7 +5,7 @@
 
 @media screen and (min-width:768px) {
       .container {
-        width: 100%;
+        width: 50%;
       }   
 }
 
@@ -18,20 +18,20 @@
 }
 
 .detail__image {
-    width: 50%;
+    width: 25%;
 }
 
 .content {
-    width: 100%;
+    width: 50%;
 }
 
 @media screen and (min-width:768px) {
     .detail__image {
-        width: 50%;
+        width: 25%;
     }
     .content {
         padding-left: 3rem;
-        width: 50%;
+        width: 25%;
     }
 }
 

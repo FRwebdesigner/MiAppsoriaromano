@@ -1,7 +1,7 @@
 const productos= [
     {
         id:'1',
-        name:'Mascota 1',
+        name:'Caniche Toy Marron',
         stock:475,
         price:500,
         description:'Caniche Toy',
@@ -10,7 +10,7 @@ const productos= [
     },
     {
         id:'2',
-        name:'Mascota 2',
+        name:'Gato Raza Tuxedo',
         stock:650,
         price:675,
         description:'Gato Raza Tuxedo',
@@ -19,7 +19,7 @@ const productos= [
     },
     {
         id:'3',
-        name:'Mascota 3',
+        name:'Gato Raza Golden',
         stock:840,
         price:865,
         description:'Gato Raza Golden',
@@ -28,7 +28,7 @@ const productos= [
     },
     {
         id:'4',
-        name:'Mascota 4',
+        name:'Ovejero Aleman',
         stock:550,
         price:575,
         description:'Ovejero Aleman',
@@ -37,7 +37,7 @@ const productos= [
     },
     {
         id:'5',
-        name:'Mascota 5',
+        name:'Gato Blanco',
         stock:500,
         price:550,
         description:'Gato Blanco',
@@ -46,13 +46,50 @@ const productos= [
     },
     {
         id:'6',
-        name:'Mascota 6',
+        name:'Siberian',
         stock:1900,
         price:2000,
         description:'Siberian',
         img:'https://0d2ujxjiqkxw.cdn.shift8web.com/wp-content/uploads/husky.jpg',
-        category:'nuevos ingresos'
-    }
+        category:'nuevos'
+    },
+    {
+        id:'7',
+        name:'Gato Gris',
+        stock:800,
+        price:850,
+        description:'Gato Gris',
+        img:'https://cdn.skoon.com.mx/wp-content/uploads/2021/07/13115043/gato-British-Shorthair-1024x682.jpg',
+        category:'nuevos'
+    },
+    {
+        id:'8',
+        name:'Perro Salchicha',
+        stock:1000,
+        price:1150,
+        description:'Perro Salchicha',
+        img:'https://www.hola.com/horizon/landscape/d1eaad20c4c6-adobestock47432136.jpg?im=Resize=(640),type=downsize',
+        category:'nuevos'
+    },
+    {
+        id:'9',
+        name:'Perro Gris',
+        stock:1300,
+        price:1400,
+        description:'Perro Gris',
+        img:'https://i.pinimg.com/736x/67/33/2a/67332af3551d48ebbe44bd54806a3b42.jpg',
+        category:'nuevos'
+    },
+    {
+        id:'10',
+        name:'Gato Marrón',
+        stock:950,
+        price:975,
+        description:'Gato Marrón',
+        img:'https://i0.wp.com/luccalaloca.es/wp-content/uploads/2024/03/Depositphotos_7879319_S.jpg?ssl=1',
+        category:'nuevos'
+    },
+
 ]
 
 export const getProducts = () =>{

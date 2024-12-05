@@ -16,11 +16,11 @@ const ItemDetailContainer = () => {
         .catch((error)=>console.log(error))
         .finally(()=> setLoading(false))
     },[])
-    // useEffect(()=>{
-    //     getProducts()
-    //     .then((res)=> setProducto(res.find((item)=> item.id === '2')))
-    //     .catch((error)=>console.log(error))
-    // },[])
+     useEffect(()=>{
+         getProducts()
+         .then((res)=> setProducto(res.find((item)=> item.id === '2')))
+         .catch((error)=>console.log(error))
+     },[])
   return (
     <div>
        {loading ? <Loader/> : <ItemDetail producto={producto}/>}

@@ -23,9 +23,7 @@ function NavbarReactBootstrap() {
                 Ofertas
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>
-             
-             
+              <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>              
             </NavDropdown>
           </Nav>
            {cartQuantity() > 0 && <NavLink to='/cart' style={{textDecoration:'none'}}>

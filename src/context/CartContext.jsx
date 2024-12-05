@@ -16,7 +16,6 @@ export const CartProvider = ({children}) =>{
             })
         )
        }else{
-        //sumar un item nuevo al carrito
            setCart([...cart, {...item, cantidad:quantity}])
        }
     }

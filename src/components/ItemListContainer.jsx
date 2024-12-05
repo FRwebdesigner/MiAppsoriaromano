@@ -9,13 +9,11 @@ const ItemListContainer = ({greeting, texto}) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading]= useState(false)
     const {category}= useParams()
-    // const {greeting, texto} = props
     useEffect(()=>{
         setLoading(true)
         getProducts()
         .then((res)=>{
             if(category){
-                //filtrar
                 setProducts(res.filter((prod)=> prod.category === category ))
             }else{
                 setProducts(res)
@@ -26,8 +24,7 @@ const ItemListContainer = ({greeting, texto}) => {
     },[category])
 
     return(
-        <div>
-          
+        <div>      
             <h1 className="text-center">{greeting}<span style={{textTransform:'capitalize', color:'violet'}}>{category}</span></h1>
            {loading ? <Loader/>: <ItemList products={products}/>}
          </div>
