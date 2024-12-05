@@ -24,7 +24,7 @@ const productos= [
         price:865,
         description:'Gato Raza Golden',
         img:'https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,w_900,c_thumb,f_auto,q_80/mascotas/i-12235.jpeg',
-        category:'nuevos ingresos'
+        category:'ofertas'
     },
     {
         id:'4',
