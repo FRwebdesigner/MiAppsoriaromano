@@ -10,7 +10,6 @@ import Error from './components/Error';
 import { CartProvider } from './context/CartContext';
 import CartView from './components/CartView';
 
-
 function App() {
   return (
     <CartProvider>
