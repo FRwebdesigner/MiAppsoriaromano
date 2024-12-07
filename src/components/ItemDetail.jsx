@@ -5,18 +5,11 @@ import { CartContext, useCart } from '../context/CartContext'
 
 const ItemDetail = ({producto}) => {
     const [compra, setCompra] = useState(false)
-    // const {addToCart, cart}= useContext(CartContext)
+ 
     const {addToCart}= useCart()
     const onAdd = (cantidad) =>{
       setCompra(true)
-      // let cartItem = {
-      //   name: producto.name,
-      //   img: producto.img,
-      //   price: producto.price,
-      //   stock:producto.stock,
-      //   id:producto.id
-      // }
-      //   addToCart(cartItem, cantidad)
+    
       addToCart(producto, cantidad)
     }
    

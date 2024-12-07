@@ -15,15 +15,15 @@ function NavbarReactBootstrap() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link to='/' as={NavLink}>Home🏚</Nav.Link>
-            <NavDropdown title="Productos🐱🐶" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to='/products/mas vendidos'>Más Vendidos🚚</NavDropdown.Item>
+            <Nav.Link to='/' as={NavLink}>Home</Nav.Link>
+            <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item  as={NavLink} to='/products/ofertas'>
-                Ofertas📈
+                Ofertas
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos📦</NavDropdown.Item>              
+              <NavDropdown.Item  as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>              
             </NavDropdown>
           </Nav>
            {cartQuantity() > 0 && <NavLink to='/cart' style={{textDecoration:'none'}}>

@@ -10,7 +10,7 @@ const Item = ({product}) => {
     <p className="card-text">${product.price}</p>
     <Link to={`/item/${product.id}`} className="btn btn-primary">Ver más</Link>
     
-    {/* <Link to={'/item/'+product.id} className="btn btn-primary">Ver más</Link> */}
+   
   </div>
 </div>
   )

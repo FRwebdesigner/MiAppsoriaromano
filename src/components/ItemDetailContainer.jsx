@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
     },[])
      useEffect(()=>{
          getProducts()
-         .then((res)=> setProducto(res.find((item)=> item.id === '2')))
+         .then((res)=> setProductos(res.find((item)=> item.id === '1')))
          .catch((error)=>console.log(error))
      },[])
   return (

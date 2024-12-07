@@ -24,13 +24,13 @@ const productos= [
         price:865,
         description:'Gato Raza Golden',
         img:'https://res.cloudinary.com/postedin/image/upload/d_mascotas:no-image.jpg,w_900,c_thumb,f_auto,q_80/mascotas/i-12235.jpeg',
-        category:'ofertas'
+        category:'nuevos ingresos'
     },
     {
         id:'4',
         name:'Ovejero Aleman',
-        stock:550,
-        price:575,
+        stock:1050,
+        price:1175,
         description:'Ovejero Aleman',
         img:'https://ohmydogmagazine.com.ar/wp-content/uploads/dog-germanshepherd-runa.jpg',
         category:'ofertas'
@@ -47,8 +47,8 @@ const productos= [
     {
         id:'6',
         name:'Siberian',
-        stock:1900,
-        price:2000,
+        stock:2050,
+        price:2500,
         description:'Siberian',
         img:'https://0d2ujxjiqkxw.cdn.shift8web.com/wp-content/uploads/husky.jpg',
         category:'nuevos'
