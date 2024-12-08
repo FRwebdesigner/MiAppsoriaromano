@@ -10,7 +10,7 @@ const Loader = () => {
         justifyContent: 'center',
         alignItems: 'center'
     }}>
-          <ClimbingBoxLoader color='violet' size={90} />
+          <ClimbingBoxLoader color='grey' size={100} />
     </div>
   )
 }
