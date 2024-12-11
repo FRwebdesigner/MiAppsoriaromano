@@ -11,11 +11,11 @@ function NavbarReactBootstrap() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand to='/' style={{fontWeight:'bolder', color:'purple', backgroundColor:"aqua"}} as={NavLink}>PetShopStore 😺🐶🧶🦴</Navbar.Brand>
+        <Navbar.Brand to='/' style={{fontWeight:'bolder', color:'purple', backgroundColor:"burlywood", fontSize:"2rem"}} as={NavLink}>PetShopStore 😺🐶🧶🦴</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor:"white"}}>
           <Nav className="me-auto">
-            <Nav.Link to='/' style={{fontWeight:'bolder', color:'violet'}} as={NavLink}>Home</Nav.Link>
+            <Nav.Link to='/' style={{fontWeight:'bolder', color:'black',}} as={NavLink}>Home</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item  style={{fontWeight:'bolder', color:'brown'}} as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
               <NavDropdown.Divider />
