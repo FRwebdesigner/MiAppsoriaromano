@@ -11,9 +11,18 @@
 
 ### Version HOST 💻
 
-Si desea ver el proyecto online, puede ingresar al siguiente link [Coder App](https://mi-appsoriaromano.vercel.app/)
+Si desea ver el proyecto online, puede ingresar al siguiente link [Coder App](https://mi-appsoriaromano-dsgu.vercel.app/)
+
+### Librerias utilizadas en este proyecto 📖
+
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/): utilizada para el styling de la app
+- [Firebase](https://firebase.google.com/): utilizada como base de datos
+- [React Router Dom](https://reactrouter.com/): navegación por rutas
+- [React Spinners](https://reactrouter.com/): componentes spinners
+- [React Hook Form](https://reactrouter.com/): validación de formularios
 
 
+#   Desarrollado por FRwebdesigner 🥳
 
 # React + Vite
 
