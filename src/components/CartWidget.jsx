@@ -1,5 +1,5 @@
 const CartWidget = ({counter}) => {
-
+    
     return(
         <div className="cartWidgetContainer">
             <img src='./shopping-cart.png' alt='cart' className="cartIcon"/>
@@ -7,6 +7,5 @@ const CartWidget = ({counter}) => {
         </div>
     )
 }
-
 
 export default CartWidget

@@ -1,9 +1,9 @@
-const productos= [
+ export const productos= [
     {
         id:'1',
         name:'Caniche Toy Marron',
         stock:475,
-        price:600,
+        price:500,
         description:'Caniche Toy',
         img:'https://cdn-coodb.nitrocdn.com/YoOVXLwRMctAOcRroQYMJHRPeNnvDFno/assets/images/optimized/rev-261ca70/topcriadores.com/wp-content/uploads/2021/07/toy-buena.jpg',
         category:'mas vendidos'
