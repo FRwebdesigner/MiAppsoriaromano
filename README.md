@@ -1,3 +1,18 @@
+# PetShopStore 😺🐶🧶🦴 App
+
+![image](public/screenshots/Captura%20de%20pantalla%20(528).png)
+
+
+### Instalación ⚙️
+
+- Clone el repositorio
+- Ejecute npm install para instalar dependencias y crear la carpeta node_modules
+- Ejecute npm run dev para levantarlo en servidor local
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

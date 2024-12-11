@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <NavbarReactBootstrap/>
       <Routes>
-        <Route path='/' element={<ItemListContainer style={{color:'violet'}} greeting='Bienvenidos a PetShopStore 😺🐶🧶🦴'/>}/>
+        <Route path='/' element={<ItemListContainer greeting='Bienvenidos a PetShopStore 😺🐶🧶🦴'/>}/>
         <Route path='/products/:category' element={<ItemListContainer greeting='Bienvenidos a la categoria: '/>}/>
         <Route path='/item/:id' element={<ItemDetailContainer/>}/>
         <Route path='/cart' element={<CartView/>}/>
