@@ -8,7 +8,7 @@ const CartWidgetReactIcons = () =>{
       
     return(
         <div>
-            <BsCart4 fontSize={'1.5rem'} color='violet'/>
+            <BsCart4 fontSize={'2.25rem'} color='violet'/>
            { cartQuantity() > 0 && <Badge bg="danger">{cartQuantity()}</Badge>}
         </div>
     )

@@ -17,7 +17,7 @@ function NavbarReactBootstrap() {
           <Nav className="me-auto">
             <Nav.Link to='/' style={{fontWeight:'bolder', color:'black', fontSize:"1.5rem", backgroundColor:"gray",}} as={NavLink}>Home</Nav.Link>
             <NavDropdown style={{fontWeight:'bolder', color:'whitesmoke', fontSize:"1.5rem", backgroundColor:"whitesmoke"}} title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item  style={{fontWeight:'bolder', color:'whitesmoke', fontSize:"1.5rem", backgroundColor:"blue"}} as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
+              <NavDropdown.Item  style={{fontWeight:'bolder', color:'whitesmoke', fontSize:"1.5rem", backgroundColor:"goldenrod"}} as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item  style={{fontWeight:'bolder', color:'blue', fontSize:"1.5rem", backgroundColor:"greenyellow"}} as={NavLink} to='/products/ofertas'>
                 Ofertas
