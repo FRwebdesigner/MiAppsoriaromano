@@ -58,7 +58,7 @@ const ItemListContainer = ({greeting, texto}) => {
         <div>
             {/* Para agregar los items dinamicamente, se hace UNA VEZ */}
           {/* <button onClick={addData}>Agregar a Firebase</button> */}
-            <h1 className="text-center" style={{color: "brown"}}>{greeting}<span style={{textTransform:'capitalize'}}>{category}</span></h1>
+            <h1 className="text-center" style={{color: "brown", background:"palegoldenrod"}}>{greeting}<span style={{textTransform:'capitalize'}}>{category}</span></h1>
            {loading ? <Loader/>: <ItemList products={products}/>}
          </div>
     )
