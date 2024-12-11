@@ -11,21 +11,19 @@ function NavbarReactBootstrap() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand to='/' style={{fontWeight:'bolder', color:'purple', backgroundColor:"burlywood", fontSize:"2rem"}} as={NavLink}>PetShopStore 😺🐶🧶🦴</Navbar.Brand>
+        <Navbar.Brand to='/' style={{fontWeight:'bolder', color:'purple', backgroundColor:"burlywood", fontSize:"2.25rem"}} as={NavLink}>PetShopStore 😺🐶🧶🦴</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor:"white"}}>
           <Nav className="me-auto">
-            <Nav.Link to='/' style={{fontWeight:'bolder', color:'black',}} as={NavLink}>Home</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item  style={{fontWeight:'bolder', color:'brown'}} as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
+            <Nav.Link to='/' style={{fontWeight:'bolder', color:'black', fontSize:"1.5rem", backgroundColor:"gray",}} as={NavLink}>Home</Nav.Link>
+            <NavDropdown style={{fontWeight:'bolder', color:'whitesmoke', fontSize:"1.5rem", backgroundColor:"whitesmoke"}} title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item  style={{fontWeight:'bolder', color:'whitesmoke', fontSize:"1.5rem", backgroundColor:"blue"}} as={NavLink} to='/products/mas vendidos'>Más Vendidos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item  style={{fontWeight:'bolder', color:'blue'}} as={NavLink} to='/products/ofertas'>
+              <NavDropdown.Item  style={{fontWeight:'bolder', color:'blue', fontSize:"1.5rem", backgroundColor:"greenyellow"}} as={NavLink} to='/products/ofertas'>
                 Ofertas
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item   style={{fontWeight:'bolder', color:'turquoise'}} as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>
-             
-             
+              <NavDropdown.Item   style={{fontWeight:'bolder', color:'turquoise', fontSize:"1.5rem", backgroundColor:"red"}} as={NavLink} to='/products/nuevos'>Nuevos Ingresos</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           {cartQuantity() > 0 && <NavLink to='/cart' style={{textDecoration:'none'}}>
