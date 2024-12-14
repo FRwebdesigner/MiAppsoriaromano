@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import Loader from './Loader'
 import { collection, doc, getDoc } from 'firebase/firestore'
 import { db } from '../services/Firebase'
+import { BiFontSize } from 'react-icons/bi'
 
 const ItemDetailContainer = () => {
     const [producto, setProducto]=useState({})
